@@ -15,6 +15,9 @@ TARGET_SCREEN_DENSITY := 480
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/oplus_yupik_QGKI.config
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/devices/virtual/oplus_chg/battery/mmi_charging_enable
+
 # OTA
 TARGET_OTA_ASSERT_DEVICE := RMX3360,RMX3363,lunaa,RE54ABL1
 
