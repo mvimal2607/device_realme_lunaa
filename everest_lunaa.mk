@@ -12,7 +12,7 @@ $(call inherit-product, vendor/everest/config/common_full_phone.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 #Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Everest Maintainer Stuff
 EVEREST_BUILD_TYPE := official
