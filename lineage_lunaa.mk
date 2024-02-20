@@ -1,8 +1,3 @@
-#
-# Copyright (C) 2023 The LineageOS Project
-#
-# SPDX-License-Identifier: Apache-2.0
-#
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -11,8 +6,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lunaa device
 $(call inherit-product, device/realme/lunaa/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Boot Animation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Maitainer Stuffs
+MATRIXX_CHIPSET := SD778G
+MATRIXX_BATTERY := 4300mah
+MATRIXX_DISPLAY := 1080*2400
+MATRIXX_MAINTAINER := Vimal
+TARGET_HAS_UDFPS := true
+WITH_GMS := true
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
 
 PRODUCT_NAME := lineage_lunaa
 PRODUCT_DEVICE := lunaa
